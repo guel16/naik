@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -10,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    padding-top: 80px; /* Ajuste para evitar sobreposição da header fixa */
+    padding-top: 80px; 
     background-color: #F4F4F4;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -21,14 +23,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background: linear-gradient(90deg, #111, #333); /* Gradiente sofisticado */
+    background: black;
     color: #fff;
     font-family: 'Pokemon', 'Helvetica Neue', Arial, sans-serif;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -38,7 +40,7 @@ header {
 }
 
 .logo img:hover {
-    transform: scale(1.1); /* Efeito de zoom no logotipo */
+    transform: scale(1.1);
 }
 
 nav ul {
@@ -63,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6200; /* Cor vibrante inspirada na Nike */
+    color: #ff6200; 
 }
 
 nav ul li a::after {
@@ -78,7 +80,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Sublinhado animado */
+    width: 100%; 
 }
 
 .icons a {
@@ -129,7 +131,7 @@ nav ul li a:hover::after {
     }
 
     .menu-toggle:checked ~ nav {
-        display: block; /* Exibe o menu quando o checkbox está marcado */
+        display: block; 
     }
 
     .icons {
@@ -141,7 +143,7 @@ nav ul li a:hover::after {
 #vitrine {
     width: 100vw;
     height: 80vh;
-    border: 1px solid #F4F4F4;
+    /* border: 1px solid #F4F4F4; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -151,7 +153,7 @@ nav ul li a:hover::after {
 #vitrine .cartas {
     width: 25%;
     height: 80%;
-    border: solid 1px white ;
+    /* border: solid 1px white ; */
     box-shadow: inset;
     display: flex;
     justify-content: center;
@@ -193,6 +195,12 @@ button {
     cursor: pointer;
     border-radius: 10px;
     font-size: 20px;
+    transition: background-color 1.0s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:hover{
+    background: #ff6200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -210,7 +218,7 @@ li {
 #cartas2 {
     width: 100vw;
     height: 110vh;
-    border: 1px solid #F4F4F4;
+    /* border: 1px solid #F4F4F4; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -223,7 +231,7 @@ li {
 #cartas2 .cartas1 {
     width: 25%;
     height: 80%;
-    border: solid 1px white;
+    /* border: solid 1px white; */
     border-radius: 10px;
     display: flex;
     justify-content: center;
